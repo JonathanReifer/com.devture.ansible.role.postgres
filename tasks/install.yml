@@ -85,7 +85,7 @@
     - dump-all
 
 - name: Ensure Postgres container network is created
-  community.general.docker_network:
+  community.docker.docker_network:
     name: "{{ devture_postgres_container_network }}"
     driver: bridge
 
